@@ -1,0 +1,17 @@
+{
+  "_readme": "OPTIONAL. The /types folder tree is the structure: folder = accordion, .html file = workspace type. This file only adds labels/overrides. 'title' = top accordion. 'folders' keys are folder paths inside /types. 'types' entries are matched by src (name, id, featured). On hosts without directory listing, run tools/scan-types.py to keep 'types' in sync.",
+  "title": "Workspace Types",
+  "folders": {
+    "document-workspace": {
+      "name": "Document Workspace"
+    }
+  },
+  "types": [
+    {
+      "id": "textualistic",
+      "name": "Textualistic",
+      "src": "types/document-workspace/textualistic.html",
+      "featured": true
+    }
+  ]
+}
