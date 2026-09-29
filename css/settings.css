@@ -1,0 +1,22 @@
+.sec{padding:18px 20px;border-bottom:1px solid var(--line)}
+.sec:last-child{border-bottom:0}
+.sec h3{font-size:.95rem;font-weight:500}
+.sec h4{font-size:.85rem;font-weight:400;color:var(--muted);margin:16px 0 10px}
+.themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;padding:8px}
+.row[data-go]{display:flex;justify-content:space-between;align-items:center}
+.row[data-go]::after{content:"\203A";color:var(--muted);font-size:1.2rem;line-height:1}
+.win header .lead h2{padding-left:2px}
+.themes button{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;border:1px solid var(--line);border-radius:10px;font-size:.9rem;transition:background .4s var(--ease),border-color .4s var(--ease),transform .4s var(--ease)}
+.themes button:active{transform:scale(.97)}
+.themes button:hover{background:var(--hover)}
+.themes .sw{width:16px;height:16px;border-radius:50%;flex:none;border:1px solid var(--muted)}
+.themes button[aria-pressed="true"]{border-color:var(--fg)}
+.about{padding:8px 8px 4px}
+.about p{font-size:.92rem;line-height:1.65}
+.about p+p{margin-top:14px;color:var(--muted)}
+.about p:first-child{color:var(--fg);font-weight:500}
+.about a{color:var(--fg);text-decoration:underline;text-underline-offset:.18em}
+.about a:hover{color:var(--muted)}
+.folders{padding:8px 0 0}
+.row .fl{display:flex;align-items:center;gap:10px;min-width:0;color:var(--fg);font-size:inherit}
+.fl svg{width:18px;height:18px;flex:none;fill:none;stroke:var(--muted);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}

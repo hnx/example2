@@ -1,0 +1,12 @@
+/* Gate */
+.gate{position:fixed;inset:0;z-index:60;background:var(--bg);transition:opacity 1s var(--ease-io),visibility 0s 1s}
+.gate.gone{opacity:0;visibility:hidden;pointer-events:none}
+.gate h1{position:absolute;left:24px;right:24px;bottom:calc(50% + 52px);transition:transform 1s var(--ease),opacity .8s var(--ease);animation:rise 1.6s var(--ease) .1s backwards}
+.gate.gone h1{transform:translateY(-14px);opacity:0}
+.enter{position:absolute;left:50%;top:50%;translate:-50% -50%;padding:15px 46px;border:1px solid var(--muted);border-radius:999px;
+font-size:.78rem;font-weight:500;letter-spacing:.32em;text-indent:.32em;text-transform:uppercase;
+transition:background .6s var(--ease),color .6s var(--ease),border-color .6s var(--ease),transform .6s var(--ease),letter-spacing .6s var(--ease),opacity .8s var(--ease);
+animation:rise 1.6s var(--ease) .7s backwards}
+.enter:hover{background:var(--fg);color:var(--bg);border-color:var(--fg);letter-spacing:.38em;text-indent:.38em}
+.enter:active{transform:scale(.96)}
+.gate.gone .enter{opacity:0;transform:scale(1.08)}
